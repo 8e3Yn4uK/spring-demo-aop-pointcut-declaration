@@ -2,24 +2,21 @@ package com.aopdemo.aspect;
 
 import org.aspectj.lang.annotation.Aspect;
 import org.aspectj.lang.annotation.Before;
-import org.aspectj.lang.annotation.Pointcut;
 import org.springframework.core.annotation.Order;
 import org.springframework.stereotype.Component;
 
 /**
- * Created by 8e3Yn4uK on 13.03.2019
+ * Created by 8e3Yn4uK on 17.03.2019
  */
 
 @Aspect
 @Component
-@Order(3)
-public class MyDemoLoggingAspect {
-
+@Order(2)
+public class MyApiAnaliticsAspect {
 
     @Before("com.aopdemo.aspect.PointcutExpressions.forDaoPackageNoGetterSetter()")
-    public void beforeAddAccountAdvice(){
+    public void performApiAnalitics(){
 
-        System.out.println("\n Executing @Before advice");
+        System.out.println("\n Performing API Analitics");
     }
-
 }

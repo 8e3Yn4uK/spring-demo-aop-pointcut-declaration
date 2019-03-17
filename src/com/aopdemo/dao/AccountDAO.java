@@ -1,6 +1,5 @@
 package com.aopdemo.dao;
 
-import com.aopdemo.Account;
 import org.springframework.stereotype.Component;
 
 /**
@@ -10,7 +9,7 @@ import org.springframework.stereotype.Component;
 @Component
 public class AccountDAO {
 
-    public void addAccount(Account theAccount, boolean vipFlag){
+    public void addAccount(com.aopdemo.AccountDAO theAccountDAO, boolean vipFlag){
         System.out.println("\n" + getClass() + ": Doing my DB work - adding account");
     }
 }

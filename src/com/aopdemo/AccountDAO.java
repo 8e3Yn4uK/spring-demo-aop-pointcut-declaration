@@ -4,10 +4,10 @@ package com.aopdemo;
  * Created by 8e3Yn4uK on 17.03.2019
  */
 
-public class Account {
+public class AccountDAO {
 
     private String name;
-    private String level;
+    private String serviceCode;
 
     public String getName() {
         return name;
@@ -17,11 +17,11 @@ public class Account {
         this.name = name;
     }
 
-    public String getLevel() {
-        return level;
+    public String getServiceCode() {
+        return serviceCode;
     }
 
-    public void setLevel(String level) {
-        this.level = level;
+    public void setServiceCode(String level) {
+        this.serviceCode = serviceCode;
     }
 }
